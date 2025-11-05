@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bruno Surijón | Full Stack Web Developer</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Colores e íconos -->
+  <meta name="theme-color" content="#2c2c2c">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="img/icon-512.png">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div id="loader">
+    <div class="loader-content">
+        <img src="img/logoBs.png" alt="Logo" class="loader-logo">
+        <h1 class="loader-name">Bruno Surijón</h1>
+    </div>
+    </div>
+
+  <!-- ✅ NAVBAR -->
+  <header class="navbar"> 
+    <div class="navbar-logo">
+        <img src="img/logoBs.png" alt="Logo BS">
+    </div>
+
+    <!-- Botón hamburguesa (solo visible en mobile) -->
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <svg class="close-icon" viewBox="0 0 24 24">
+            <line x1="4" y1="4" x2="20" y2="20" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <line x1="20" y1="4" x2="4" y2="20" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="navbar-menu-langs">
+        <nav class="navbar-menu">
+        <a href="#inicio" data-lang="nav_inicio">Inicio</a>
+        <a href="#sobre-mi" data-lang="nav_sobre_mi">Sobre Mí</a>
+        <a href="#proyectos" data-lang="nav_proyectos">Proyectos</a>
+        <a href="#habilidades" data-lang="nav_habilidades">Habilidades</a>
+        <a href="#contacto" data-lang="nav_contacto">Contacto</a>
+        </nav>
+
+        <div class="navbar-languages">
+        <img src="img/español.png" alt="Español" class="lang-flag active" data-lang-btn="es">
+        <img src="img/ingles.png" alt="Inglés" class="lang-flag" data-lang-btn="en">
+        </div>
+    </div>
+    </header>
+
+
+
+  <!-- ================== ABOUT ================== -->
+  <section id="inicio" class="about-section">
+    <div class="about-container">
+
+        <div class="about-img">
+        <img src="img/brunosurijon.jpeg" alt="Bruno Surijón">
+        </div>
+
+        <div class="about-text">
+        <h2 class="about-name">BRUNO SURIJÓN</h2>
+        <h3 class="about-role" data-lang="about_role">DESARROLLADOR WEB FULL STACK</h3>
+        <p class="about-desc" data-lang="about_desc">
+            Soy desarrollador Full Stack apasionado por desarrollar aplicaciones web funcionales y atractivas.
+            Disfruto fusionar el diseño con la tecnología para crear experiencias digitales que generen impacto.
+        </p>
+        </div>
+
+    </div>
+    </section>
+
+
+  <!-- ================== SOBRE MÍ ================== -->
+  <section id="sobre-mi" class="aboutme-section">
+    <div class="aboutme-container">
+
+        <div class="aboutme-title">
+        <div class="aboutme-dot"></div>
+        <span data-lang="sobre_mi_title">SOBRE MÍ</span>
+        </div>
+
+        <div class="aboutme-text">
+        <p data-lang="sobre_mi_p1">
+            Graduado en Escuela Da Vinci como Técnico Superior en Programación y Diseño Web, me especializo en el desarrollo frontend y backend, integrando diseño y funcionalidad para crear sitios web y aplicaciones modernas y eficientes.
+        </p>
+        <p data-lang="sobre_mi_p2">
+            Me gusta crear proyectos que se vean bien y funcionen aún mejor. Trato de que mis trabajos sean visualmente atractivos, fáciles de usar y con un buen rendimiento. Creo que la clave está en encontrar el equilibrio entre lo técnico y lo creativo, para lograr experiencias que realmente tengan un fuerte impacto y sean de gran utilidad.
+        </p>
+        </div>
+
+        <a href="#contacto" class="aboutme-btn" data-lang="contactame_btn">Contactame</a>
+    </div>
+    </section>
+
+
+    <!-- ================== PROYECTOS ================== -->
+    <section id="proyectos" class="projects-section">
+    <div class="projects-container">
+
+        <div class="aboutme-title">
+        <div class="aboutme-dot"></div>
+        <span data-lang="proyectos_title">PROYECTOS</span>
+        </div>
+
+        <div class="swiper projects-swiper">
+        <div class="swiper-wrapper">
+
+            <!-- CARD 1 -->
+            <div class="swiper-slide">
+            <div class="project-card">
+                <div class="project-img-container">
+                <img src="/img/gondoleando.png" alt="Gondoleando" class="project-img">
+                </div>
+                <h3>Gondoleando</h3>
+                <p data-lang="proyecto1_desc">
+                <strong>Gondoleando</strong> es un comparador de precios de supermercados que permite armar listas de compras, compartirlas y localizar sucursales cercanas dentro de CABA con un mapa interactivo.
+                </p>
+                <p class="tech-title" data-lang="hecho_con">Hecho con:</p>
+                <p class="tech-used"><strong>Vue.js &nbsp; Node.js &nbsp; MongoDb &nbsp; CSS</strong></p>
+                <div class="project-buttons">
+                <a href="https://github.com/BrunoSurijon/Gondoleando" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/codigo.png" class="btn-icon"><span data-lang="ver_codigo">Ver código</span>
+                </a>
+                <a href="https://gondoleando-frontend.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/sitio.png" class="btn-icon"><span data-lang="visitar_pagina">Visitar página</span>
+                </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="swiper-slide">
+            <div class="project-card">
+                <div class="project-img-container">
+                <img src="/img/lectorium.png" alt="Lectorium" class="project-img">
+                </div>
+                <h3>Lectorium</h3>
+                <p data-lang="proyecto2_desc">
+                <strong>Lectorium</strong> es una red social de libros, allí podrás publicar tus libros favoritos, comentar publicaciones de los otros usuarios y conocer los próximos eventos de la comunidad.
+                </p>
+                <p class="tech-title" data-lang="hecho_con">Hecho con:</p>
+                <p class="tech-used"><strong>Vue.js &nbsp; Firebase &nbsp; Tailwind CSS</strong></p>
+                <div class="project-buttons">
+                <a href="https://github.com/BrunoSurijon/Lectorium" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/codigo.png" class="btn-icon"><span data-lang="ver_codigo">Ver código</span>
+                </a>
+                <a href="https://lectorium.netlify.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/sitio.png" class="btn-icon"><span data-lang="visitar_pagina">Visitar página</span>
+                </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="swiper-slide">
+            <div class="project-card">
+                <div class="project-img-containerblck">
+                <img src="/img/luminex.png" alt="Luminex" class="project-img">
+                </div>
+                <h3>Luminex</h3>
+                <p data-lang="proyecto3_desc">
+                <strong>Luminex</strong> es un buscador de películas de IMDb, contiene una sección inicial de películas populares y permite agregar películas a favoritos, filtrar por género y ver descripciones.
+                </p>
+                <p class="tech-title" data-lang="hecho_con">Hecho con:</p>
+                <p class="tech-used"><strong>HTML &nbsp; CSS &nbsp; JavaScript &nbsp; Bootstrap &nbsp; API</strong></p>
+                <div class="project-buttons">
+                <a href="https://github.com/BrunoSurijon/Luminex" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/codigo.png" class="btn-icon"><span data-lang="ver_codigo">Ver código</span>
+                </a>
+                <a href="https://luminexx.netlify.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/sitio.png" class="btn-icon"><span data-lang="visitar_pagina">Visitar página</span>
+                </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="swiper-slide">
+            <div class="project-card">
+                <div class="project-img-container">
+                <img src="/img/tikitiki.png" alt="Tiki Tiki" class="project-img">
+                </div>
+                <h3>Tiki Tiki</h3>
+                <p data-lang="proyecto4_desc">
+                <strong>Tiki Tiki</strong> es un ecommerce de camisetas, shorts y buzos de fútbol argentino e internacional. Permite agregar productos al carrito de compras y separarlos por categoría.
+                </p>
+                <p class="tech-title" data-lang="hecho_con">Hecho con:</p>
+                <p class="tech-used"><strong>HTML &nbsp; CSS &nbsp; JavaScript</strong></p>
+                <div class="project-buttons">
+                <a href="https://github.com/BrunoSurijon/Tiki-tiki" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/codigo.png" class="btn-icon"><span data-lang="ver_codigo">Ver código</span>
+                </a>
+                <a href="https://tiki-tiki-jet.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="/img/sitio.png" class="btn-icon"><span data-lang="visitar_pagina">Visitar página</span>
+                </a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="arrow-back"><</div>
+        <div class="arrow-next">></div>
+
+    </div>
+    </section>
+
+
+    <!-- ================== HABILIDADES ================== -->
+    <section id="habilidades" class="skills-section">
+    <div class="skills-container">
+
+        <div class="aboutme-title">
+        <div class="aboutme-dot"></div>
+        <span data-lang="habilidades_title">HABILIDADES</span>
+        </div>
+
+        <div class="skills-tabs">
+        <select class="skills-dropdown">
+            <option value="all" data-lang="tab_todas">Todas</option>
+            <option value="frontend" data-lang="tab_frontend">Frontend</option>
+            <option value="backend" data-lang="tab_backend">Backend</option>
+            <option value="design" data-lang="tab_diseno">Diseño</option>
+            <option value="database" data-lang="tab_database">Database</option>
+            <option value="others" data-lang="tab_otros">Otros</option>
+        </select>
+        <button class="skills-tab active" data-filter="all" data-lang="tab_todas">Todas</button>
+        <button class="skills-tab" data-filter="frontend" data-lang="tab_frontend">Frontend</button>
+        <button class="skills-tab" data-filter="backend" data-lang="tab_backend">Backend</button>
+        <button class="skills-tab" data-filter="design" data-lang="tab_diseno">Diseño</button>
+        <button class="skills-tab" data-filter="database" data-lang="tab_database">Database</button>
+        <button class="skills-tab" data-filter="others" data-lang="tab_otros">Otros</button>
+        </div>
+
+        <!-- SWIPER DE SKILLS -->
+        <div class="skills-swiper swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><div class="skill-card frontend"><img src="img/html.png" alt="HTML"><p>HTML</p></div></div>
+            <div class="swiper-slide"><div class="skill-card frontend"><img src="img/css.png" alt="CSS"><p>CSS</p></div></div>
+            <div class="swiper-slide"><div class="skill-card frontend"><img src="img/javascript.png" alt="JavaScript"><p>JavaScript</p></div></div>
+            <div class="swiper-slide"><div class="skill-card backend"><img src="img/node.png" alt="Node.js"><p>Node.js</p></div></div>
+            <div class="swiper-slide"><div class="skill-card frontend"><img src="img/vue.png" alt="Vue.js"><p>Vue.js</p></div></div>
+            <div class="swiper-slide"><div class="skill-card frontend"><img src="img/react.png" alt="React"><p>React.js</p></div></div>
+            <div class="swiper-slide"><div class="skill-card backend"><img src="img/php.png" alt="PHP"><p>PHP</p></div></div>
+            <div class="swiper-slide"><div class="skill-card database"><img src="img/mysql.png" alt="MySQL"><p>MySQL</p></div></div>
+            <div class="swiper-slide"><div class="skill-card backend"><img src="img/express.png" alt="Express"><p>Express</p></div></div>
+            <div class="swiper-slide"><div class="skill-card backend"><img src="img/laravel.png" alt="Laravel"><p>Laravel</p></div></div>
+            <div class="swiper-slide"><div class="skill-card database"><img src="img/mongodb.png" alt="MongoDB"><p>MongoDB</p></div></div>
+            <div class="swiper-slide"><div class="skill-card database"><img src="img/firebase.png" alt="Firebase"><p>Firebase</p></div></div>
+            <div class="swiper-slide"><div class="skill-card others"><img src="img/git.png" alt="Git"><p>Git</p></div></div>
+            <div class="swiper-slide"><div class="skill-card frontend"><img src="img/tailwind.png" alt="Tailwind"><p>Tailwind</p></div></div>
+            <div class="swiper-slide"><div class="skill-card frontend"><img src="img/bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div></div>
+            <div class="swiper-slide"><div class="skill-card database"><img src="img/mongoose.png" alt="Mongoose"><p>Mongoose</p></div></div>
+            <div class="swiper-slide"><div class="skill-card others"><img src="img/webscraping.png" alt="Web Scraping"><p>Web Scraping</p></div></div>
+            <div class="swiper-slide"><div class="skill-card others"><img src="img/wordpress.png" alt="WordPress"><p>WordPress</p></div></div>
+            <div class="swiper-slide"><div class="skill-card design"><img src="img/figma.png" alt="Figma"><p>Figma</p></div></div>
+            <div class="swiper-slide"><div class="skill-card design"><img src="img/photoshop.png" alt="Photoshop"><p>Photoshop</p></div></div>
+            <div class="swiper-slide"><div class="skill-card design"><img src="img/illustrator.png" alt="Illustrator"><p>Illustrator</p></div></div>
+            <div class="swiper-slide"><div class="skill-card design"><img src="img/canva.png" alt="Canva"><p>Canva</p></div></div>
+            <div class="swiper-slide"><div class="skill-card others"><img src="img/rstudio.png" alt="RStudio"><p>RStudio</p></div></div>
+
+        </div>
+
+        <!-- Dots -->
+        <div class="swiper-pagination skills-pagination"></div>
+        </div>
+
+        <!-- Flechas -->
+        <div class="arrow-back skills-arrow-back"><</div>
+        <div class="arrow-next skills-arrow-next">></div>
+
+    </div>
+    </section>
+
+
+
+    <!-- ================== CONTACTO ================== -->
+    <section id="contacto" class="contact-section">
+    <div class="contact-container">
+        
+        <div class="aboutme-title">
+        <div class="aboutme-dot"></div>
+        <span data-lang="contacto_title">CONTACTO</span>
+        </div>
+
+        <div class="contact-list">
+        <a href="https://linkedin.com/in/bruno-surijon/" target="_blank" class="contact-item">
+            <img src="img/linkedin.png" alt="LinkedIn" />
+            <p><strong>linkedin.com/in/bruno-surijon/</strong></p>
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brunosurijon@gmail.com&su=Interesado%20en%20tu%20perfil&body=Hola%20Bruno,%0A%0AMe%20interesa%20tu%20perfil..." target="_blank" class="contact-item">
+            <img src="img/gmail.png" alt="Email" />
+            <p><strong>brunosurijon@gmail.com</strong></p>
+        </a>
+
+        <a href="https://github.com/BrunoSurijon" target="_blank" class="contact-item">
+            <img src="img/github.png" alt="GitHub" />
+            <p><strong>github.com/BrunoSurijon</strong></p>
+        </a>
+        </div>
+
+    </div>
+    </section>
+
+    <footer class="footer">
+    <div class="footer-icons">
+        <a href="https://wa.me/5491161499375" target="_blank" rel="noopener">
+        <img src="/img/whatsapp.png" alt="Whatsapp">
+        </a>
+        <a href="https://www.instagram.com/brunosurijon_/" target="_blank" rel="noopener">
+        <img src="/img/instagram.png" alt="Instagram">
+        </a>
+    </div>
+
+    <p class="footer-text" data-lang="footer_text">Desarrollado por Bruno Surijón</p>
+
+    <div class="footer-icons">
+        <a href="https://www.facebook.com/bruno.surijon.2025" target="_blank" rel="noopener">
+        <img src="/img/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://x.com/BrunoSurij70865" target="_blank" rel="noopener">
+        <img src="/img/X.png" alt="X">
+        </a>
+    </div>
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("sw.js")
+      .then(() => console.log("✅ Service Worker registrado"))
+      .catch((err) => console.log("❌ Error registrando SW:", err));
+  }
+</script>
+</body>
+
+</html>
