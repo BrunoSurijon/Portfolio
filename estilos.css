@@ -10,6 +10,10 @@ body {
   background: #2c2c2c;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -21,13 +25,14 @@ html, body {
 #loader {
   position: fixed;
   inset: 0;
-  background: #121212; 
+  background: #121212;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 9999;
   transition: opacity 0.8s ease, visibility 0.8s ease;
+  pointer-events: auto; 
 }
 
 .loader-content {
@@ -68,6 +73,11 @@ html, body {
 #loader.hidden {
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
+}
+
+#loader.removed {
+  display: none !important;
 }
 
 
@@ -85,9 +95,17 @@ html, body {
   z-index: 1000;
 }
 
+.navbar-logo a {
+  display: inline-block;
+  position: relative;
+  z-index: 1101; 
+  cursor: pointer;
+}
+
 .navbar-logo img {
   height: 65px;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .navbar-menu-langs {

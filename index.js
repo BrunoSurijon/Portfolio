@@ -1,6 +1,3 @@
-
-
-
 // CAMBIO DE IDIOMA
 const translations = {
 es: {
@@ -114,6 +111,22 @@ link.addEventListener('click', () => {
 menuToggle.classList.remove('active');
 navMenuLangs.classList.remove('active');
 });
+});
+
+
+
+// SCROLL SUAVE
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  });
 });
 
 
@@ -304,12 +317,9 @@ function toggleSkillsArrows() {
   const prevArrow = document.querySelector('.skills-arrow-back');
   const nextArrow = document.querySelector('.skills-arrow-next');
 
-  // Ancho actual de la ventana
   const screenWidth = window.innerWidth;
 
-  // Si está en escritorio (>=1280px)
   if (screenWidth >= 1280) {
-    // Ocultar flechas solo si hay 5 o menos slides
     if (totalSlides <= 5) {
       prevArrow.style.display = 'none';
       nextArrow.style.display = 'none';
@@ -318,7 +328,6 @@ function toggleSkillsArrows() {
       nextArrow.style.display = '';
     }
   } else {
-    // En mobile/tablet, siempre mostrar flechas
     prevArrow.style.display = '';
     nextArrow.style.display = '';
   }
