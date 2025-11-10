@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bruno Surijón | Full Stack Web Developer</title>
 
- 
   <link rel="icon" href="img/logoBs.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -20,6 +19,10 @@
 </head>
 
 <body>
+
+
+    
+    <!-- LOADER -->
     <div id="loader">
     <div class="loader-content">
         <img src="img/logoBs.png" alt="Logo" class="loader-logo">
@@ -27,7 +30,9 @@
     </div>
     </div>
 
-  <!-- ✅ NAVBAR -->
+
+
+  <!-- NAVBAR -->
   <header class="navbar"> 
     <div class="navbar-logo">
         <a href="#inicio">
@@ -35,7 +40,6 @@
         </a>
     </div>
 
-    <!-- Botón hamburguesa (solo visible en mobile) -->
     <div class="menu-toggle">
         <span></span>
         <span></span>
@@ -64,7 +68,7 @@
 
 
 
-  <!-- ================== ABOUT ================== -->
+  <!-- INICIO -->
   <section id="inicio" class="about-section">
     <div class="about-container">
 
@@ -85,7 +89,8 @@
     </section>
 
 
-  <!-- ================== SOBRE MÍ ================== -->
+
+  <!-- SOBRE MÍ -->
   <section id="sobre-mi" class="aboutme-section">
     <div class="aboutme-container">
 
@@ -108,7 +113,8 @@
     </section>
 
 
-    <!-- ================== PROYECTOS ================== -->
+
+    <!-- PROYECTOS -->
     <section id="proyectos" class="projects-section">
     <div class="projects-container">
 
@@ -120,7 +126,7 @@
         <div class="swiper projects-swiper">
         <div class="swiper-wrapper">
 
-            <!-- CARD 1 -->
+            
             <div class="swiper-slide">
             <div class="project-card">
                 <div class="project-img-container">
@@ -143,7 +149,7 @@
             </div>
             </div>
 
-            <!-- CARD 2 -->
+           
             <div class="swiper-slide">
             <div class="project-card">
                 <div class="project-img-container">
@@ -166,7 +172,7 @@
             </div>
             </div>
 
-            <!-- CARD 3 -->
+            
             <div class="swiper-slide">
             <div class="project-card">
                 <div class="project-img-containerblck">
@@ -189,7 +195,7 @@
             </div>
             </div>
 
-            <!-- CARD 4 -->
+            
             <div class="swiper-slide">
             <div class="project-card">
                 <div class="project-img-container">
@@ -214,7 +220,7 @@
 
         </div>
 
-        <!-- Dots -->
+        
         <div class="swiper-pagination"></div>
         </div>
 
@@ -225,7 +231,8 @@
     </section>
 
 
-    <!-- ================== HABILIDADES ================== -->
+
+    <!-- HABILIDADES -->
     <section id="habilidades" class="skills-section">
     <div class="skills-container">
 
@@ -251,7 +258,6 @@
         <button class="skills-tab" data-filter="others" data-lang="tab_otros">Otros</button>
         </div>
 
-        <!-- SWIPER DE SKILLS -->
         <div class="skills-swiper swiper">
         <div class="swiper-wrapper">
 
@@ -281,11 +287,9 @@
 
         </div>
 
-        <!-- Dots -->
         <div class="swiper-pagination skills-pagination"></div>
         </div>
 
-        <!-- Flechas -->
         <div class="arrow-back skills-arrow-back"><</div>
         <div class="arrow-next skills-arrow-next">></div>
 
@@ -294,7 +298,7 @@
 
 
 
-    <!-- ================== CONTACTO ================== -->
+    <!--CONTACTO-->
     <section id="contacto" class="contact-section">
     <div class="contact-container">
         
@@ -323,6 +327,9 @@
     </div>
     </section>
 
+
+
+    <!-- FOOTER -->
     <footer class="footer">
     <div class="footer-icons">
         <a href="https://wa.me/5491161499375" target="_blank" rel="noopener">
@@ -346,6 +353,8 @@
     </footer>
 
 
+
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
 
@@ -357,6 +366,7 @@
       .catch((err) => console.log("❌ Error registrando SW:", err));
   }
 </script>
+
 </body>
 
 </html>
